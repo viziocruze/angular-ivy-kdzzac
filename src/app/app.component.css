@@ -1,3 +1,57 @@
-p {
-  font-family: Lato;
+/** No CSS for this example */
+mat-progress-bar {
+    /* width: 70%; */
+    height: 1.6rem;
+    /* border-radius: 0.4rem; */
+    color: red;
+  }
+
+  .chart .heading {
+    padding: 10px 0px 0px 10px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+    
+
+    
+  }
+  .sub {
+      font-size: 16px;
+    }
+
+.flex-container {
+ 
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+
+  /* flex-flow: row wrap; */
+  /* flex-wrap: nowrap | wrap | wrap-reverse; */
+  /* flex-direction: row | row-reverse | column | column-reverse; */
+  /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+}
+.flex-item-card {
+     width: 40%;
+    /* height: 50vh; */
+    /* overflow: auto; */
+    margin-top: 10px;
+    background-color: #fafbfb;
+    margin: 10px;
+    margin-right: 1%;
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+.top-10{
+  margin-top: 20px;
+}
+
+.scroll-area{
+  height: 50vh;
+    overflow: auto;
 }

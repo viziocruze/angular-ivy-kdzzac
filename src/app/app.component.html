@@ -1,4 +1,74 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<br>
+<div class="flex-container">
+	<br />
+	<ng-container>
+
+		<ng-container>
+			<div class="flex-item-card">
+				<h4 class="chart heading text-left">Crop distribution <span class="chart sub">(in ha)</span>
+				</h4>
+        <div class="scroll-area">
+          <div class="top-10" *ngFor="let item of list">
+            <div>
+              <span style="float:text-left">{{item.name}}</span>
+              <span style="float:right">{{item.value}}%</span>
+            </div>
+					
+					<mat-progress-bar matTooltip="{{item.value}}" [matTooltipPosition] ="'above'" [appProgressBarColor]="item.color" mode="determinate" [value]="item.value"></mat-progress-bar>
+				</div>
+        <!-- <div class="top-10">
+					<div style="text-align:right">20%</div>
+					<mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+				</div>
+        <div class="top-10">
+					<div style="text-align:right">20%</div>
+					<mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+				</div>
+        <div class="top-10">
+					<div style="text-align:right">20%</div>
+					<mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+				</div> -->
+        </div>
+				
+			</div>
+		</ng-container>
+    <ng-container>
+			<div class="flex-item-card">
+				<h4 class="chart heading text-left">Crop distribution <span class="chart sub">(in ha)</span>
+				</h4>
+        <div class="scroll-area">
+          <div class="top-10" *ngFor="let item of list">
+            <div style="display:inline-block;">
+              <span style="float:left">{{item.name}}</span>
+              <!-- <span style="float:right">{{item.value}}%</span> -->
+            </div>
+					<div >
+					<mat-progress-bar style="float:left" matTooltip="{{item.value}}" [matTooltipPosition] ="'above'" [appProgressBarColor]="item.color" mode="determinate" [value]="100" [style.width.%]="item.value"></mat-progress-bar> <span style="float:left">&nbsp;{{item.value}} tons</span></div>
+          <br>
+				</div>
+        <!-- <div class="top-10">
+					<div style="text-align:right">20%</div>
+					<mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+				</div>
+        <div class="top-10">
+					<div style="text-align:right">20%</div>
+					<mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+				</div>
+        <div class="top-10">
+					<div style="text-align:right">20%</div>
+					<mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+				</div> -->
+        </div>
+				
+			</div>
+		</ng-container>
+	</ng-container>
+
+
+	
+
+</div>
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
